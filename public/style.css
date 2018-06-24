@@ -10,8 +10,21 @@ body {
   height: 100vh;
 }
 
-
 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25px 50px 1fr 1fr 1fr;
+  grid-gap: 10px;
+  /* grid-auto-rows: 200px; */
+  grid-template-areas:
+    "topbar topbar topbar topbar"
+    ". . . ."
+    "logo main main ."
+    ". main main ."
+    ". . . ."
+}
+
+.container-home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 25px 50px 1fr 1fr 1fr;
@@ -32,6 +45,27 @@ body {
   text-align: center;
 }
 
+.logo {
+  grid-area: logo;
+  align-self: center;
+  justify-self: center;
+}
+
+.logo figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 100px;
+  margin: 16px 0px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  -webkit-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+}
+
+
 .profile {
   grid-area: main;
   align-self: center;
@@ -46,7 +80,32 @@ body {
   padding: 16px;
   box-sizing: border-box;
   background-color: #fff;
+
+  -webkit-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
 }
+
+.content {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+}
+
+.content figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 500px;
+  margin: 16px 0px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  -webkit-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+}
+
 
 
 nav ul {

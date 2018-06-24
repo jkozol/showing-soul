@@ -4,8 +4,14 @@ import logo from '../images/me.jpg'
 
 class Home extends React.Component {
   render() {
+    const links = [
+      {to: '/gallery', name: 'Gallery'},
+      {to: '/about', name: 'About'},
+      {to: '/work', name: 'Work'}
+    ];
+
     return (
-      <div className="container">
+      <div className="container-home">
         <div className="topbar">
         hi
         </div>
@@ -13,7 +19,7 @@ class Home extends React.Component {
           <figure>
             <img src={logo}/>
             <figcaption>
-              <Navbar />
+              <Navbar links={links}/>
             </figcaption>
           </figure>
         </div>
