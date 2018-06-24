@@ -1,0 +1,1 @@
+Art shows the soul.

@@ -1,0 +1,83 @@
+* {box-sizing: border-box;}
+
+html {
+  background-color: black;
+  height: 100vh;
+}
+
+body {
+  background-color: #f2c8aa;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25px 50px 1fr 1fr 1fr;
+  grid-gap: 10px;
+  /* grid-auto-rows: 200px; */
+  grid-template-areas:
+    "topbar topbar topbar topbar"
+    ". . . ."
+    ". main main ."
+    ". main main ."
+    ". . . ."
+}
+
+.topbar {
+  grid-area: topbar;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.profile {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+}
+
+.profile figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 500px;
+  margin: 8px 0px;
+  border: 1px solid #777;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.gallery{
+  /* grid */
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+  /* flexbox */
+  display: flex;
+  width: 900px;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px dashed gray;
+}
+
+.gallery figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 200px;
+  margin: 8px 0px;
+  border: 1px solid #777;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+figure img{
+  width: 100%;
+}
+
+figure figcaption{
+  text-align: center;
+  padding: 8px 4px;
+}
