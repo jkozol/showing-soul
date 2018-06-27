@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar'
-import logo from '../images/me.jpg';
+import Logo from '../components/Logo';
 import img1 from '../images/img1.jpg';
 import img2 from '../images/img2.jpg';
 import img3 from '../images/img3.jpg';
@@ -17,22 +17,11 @@ class Gallery extends React.Component {
 
     return (
       <div className="container">
+        <Logo />
         <div className="topbar">
         hi
         </div>
-        <div className="profile">
-          <figure>
-            <img src={logo}/>
-            <figcaption>
-              <Navbar links={links}/>
-            </figcaption>
-          </figure>
-        </div>
         <div className="gallery">
-          <figure>
-            <img src={logo}/>
-            <figcaption>Me</figcaption>
-          </figure>
           <figure>
             <img src={img1}/>
             <figcaption>Milkshake</figcaption>

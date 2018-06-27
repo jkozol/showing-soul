@@ -1,11 +1,16 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar'
+import Logo from '../components/Logo'
 
 
 class Work extends React.Component {
   render() {
     return (
-      <div></div>
+      <div className="container">
+        <Logo />
+        <div className="topbar">
+          hi
+        </div>
+      </div>
     );
   }
 };

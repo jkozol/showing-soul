@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import logo from '../images/me.jpg'
 
@@ -11,19 +12,21 @@ class Home extends React.Component {
     ];
 
     return (
-      <div className="container-home">
-        <div className="topbar">
-        hi
+      <Link to={'/about'}>
+        <div className="container-home">
+          <div className="topbar">
+          hi
+          </div>
+          <div className="profile">
+            <figure>
+              <img src={logo}/>
+              <figcaption>
+                <Navbar links={links}/>
+              </figcaption>
+            </figure>
+          </div>
         </div>
-        <div className="profile">
-          <figure>
-            <img src={logo}/>
-            <figcaption>
-              <Navbar links={links}/>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+      </Link>
     );
   }
 };

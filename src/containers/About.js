@@ -15,11 +15,17 @@ class About extends React.Component {
       <div className="container">
         <Logo />
         <div className="topbar">
-        hi
+          lies
         </div>
         <div className="content">
           <figure>
-            <img src={logo}/>
+            <div className="textbox">
+              hi
+              <br />
+              My Name is Jacob.
+              <br />
+              Im sorry you have to see this shit.
+            </div>
             <figcaption>
               <Navbar links={links}/>
             </figcaption>

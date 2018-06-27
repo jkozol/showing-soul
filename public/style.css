@@ -1,27 +1,15 @@
+ @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 * {box-sizing: border-box;}
 
 html {
-  background-color: black;
+  background-color: #071d22;
   height: 100vh;
 }
 
 body {
   background-color: #f2c8aa;
   height: 100vh;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 50px 1fr 1fr 1fr;
-  grid-gap: 10px;
-  /* grid-auto-rows: 200px; */
-  grid-template-areas:
-    "topbar topbar topbar topbar"
-    ". . . ."
-    "logo main main ."
-    ". main main ."
-    ". . . ."
 }
 
 .container-home {
@@ -38,31 +26,47 @@ body {
     ". . . ."
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25px 50px 1fr 1fr 1fr;
+  grid-gap: 10px;
+  /* grid-auto-rows: 200px; */
+  grid-template-areas:
+    "topbar topbar topbar topbar topbar topbar topbar"
+    ". . . . . . ."
+    "logo main main main main main ."
+    ". main main main main main ."
+    ". . . . . . ."
+}
+
 .topbar {
   grid-area: topbar;
-  background-color: black;
+  background-color: #071d22;
   color: white;
   text-align: center;
 }
 
 .logo {
   grid-area: logo;
-  align-self: center;
-  justify-self: center;
+  align-self: flex-start;
+  justify-self: end;
 }
 
 .logo figure{
   align-self: flex-start;
   background-color: white;
-  width: 100px;
-  margin: 16px 0px;
-  padding: 16px;
+  width: 175px;
+  margin: 12px 0px;
+  padding: 12px;
   box-sizing: border-box;
   background-color: #fff;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
 
-  -webkit-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
-  box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
 }
 
 
@@ -75,15 +79,14 @@ body {
 .profile figure{
   align-self: flex-start;
   background-color: white;
-  width: 500px;
-  margin: 16px 0px;
-  padding: 16px;
+  width: 600px;
+  margin: 8px 0px;
+  padding: 24px;
   box-sizing: border-box;
-  background-color: #fff;
 
-  -webkit-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
-  box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
 }
 
 .content {
@@ -95,15 +98,15 @@ body {
 .content figure{
   align-self: flex-start;
   background-color: white;
-  width: 500px;
-  margin: 16px 0px;
-  padding: 16px;
+  width: 800px;
+  margin: 8px 0px;
+  padding: 24px;
   box-sizing: border-box;
   background-color: #fff;
 
-  -webkit-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
-  box-shadow: 15px 15px 2px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
 }
 
 
@@ -117,17 +120,23 @@ nav ul li {
   display: inline-block;
   /* float:left; */
   text-align: center;
-  padding: 16px 4px;
+  padding: 0px 16px;
   font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
-  color: grey;
+  color: lightgrey;
+}
+
+a:hover {
+  color: #071d22;
 }
 
 .active {
-  color: black;
+  color: #071d22;
 }
 
 
@@ -160,7 +169,15 @@ figure img{
   width: 100%;
 }
 
+figure .textbox {
+  width: 100%;
+  height: 500px;
+  color: #ffffff;
+  background-color: #071d22;
+}
+
 figure figcaption{
   text-align: center;
   padding: 8px 4px;
+  color: #071d22
 }
