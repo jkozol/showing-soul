@@ -16,7 +16,7 @@ class Gallery extends React.Component {
     ];
 
     return (
-      <div className="container">
+      <div className="container-top">
         <Logo />
         <div className="topbar">
         hi

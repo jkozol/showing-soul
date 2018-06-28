@@ -5,63 +5,52 @@
 html {
   background-color: #071d22;
   height: 100vh;
+  overflow: hidden;
 }
 
 body {
   background-color: #f2c8aa;
   height: 100vh;
-}
-
-.container-home {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 50px 1fr 1fr 1fr;
-  grid-gap: 10px;
-  /* grid-auto-rows: 200px; */
-  grid-template-areas:
-    "topbar topbar topbar topbar"
-    ". . . ."
-    ". main main ."
-    ". main main ."
-    ". . . ."
+  width: 100vw;
+  margin: 0px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 50px 1fr 1fr 1fr;
+  grid-template-columns: repeat(20, 5vw);
+  grid-template-rows: repeat(20, 5vh);
   grid-gap: 10px;
   /* grid-auto-rows: 200px; */
-  grid-template-areas:
-    "topbar topbar topbar topbar topbar topbar topbar"
-    ". . . . . . ."
-    "logo main main main main main ."
-    ". main main main main main ."
-    ". . . . . . ."
 }
 
 .topbar {
-  grid-area: topbar;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  z-index: 1;
+  height: 30px;
   background-color: #071d22;
   color: white;
   text-align: center;
+  padding-top: 5px;
 }
 
 .logo {
-  grid-area: logo;
-  align-self: flex-start;
-  justify-self: end;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  justify-self: start;
 }
 
 .logo figure{
   align-self: flex-start;
   background-color: white;
   width: 175px;
-  margin: 12px 0px;
-  padding: 12px;
+  margin: 0px;
+  padding: 24px;
   box-sizing: border-box;
   background-color: #fff;
   font-family: 'Indie Flower', cursive;
+  font-size: 20px;
   font-weight: 600;
 
   -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
@@ -69,9 +58,9 @@ body {
   box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
 }
 
-
 .profile {
-  grid-area: main;
+  grid-column: 5 / 8;
+  grid-row: 2 / 4;
   align-self: center;
   justify-self: center;
 }
@@ -80,7 +69,7 @@ body {
   align-self: flex-start;
   background-color: white;
   width: 600px;
-  margin: 8px 0px;
+  margin: 0px;
   padding: 24px;
   box-sizing: border-box;
 
@@ -89,16 +78,75 @@ body {
   box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
 }
 
-.content {
-  grid-area: main;
-  align-self: center;
-  justify-self: center;
+.who {
+  grid-column: 7 / 15;
+  grid-row: 4 / 10;
+  z-index: 1;
+  align-self: start;
+  justify-self: start;
 }
 
-.content figure{
+.who figure{
   align-self: flex-start;
   background-color: white;
-  width: 800px;
+  width: 700px;
+  margin: 0px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+}
+
+.who figure .textbox {
+  width: 100%;
+  height: 450px;
+  color: #ffffff;
+  background-color: #071d22;
+}
+
+
+.what {
+  grid-column: 5 / 9;
+  grid-row: 2 / 7;
+  align-self: start;
+  justify-self: start;
+}
+
+.what figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 300px;
+  margin: 0px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+}
+
+.what figure .textbox {
+  width: 100%;
+  height: 200px;
+  color: #ffffff;
+  background-color: #071d22;
+}
+
+.why {
+  grid-column: 14 / 18;
+  grid-row: 11 / 15;
+  align-self: start;
+  justify-self: start;
+}
+
+.why figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 300px;
   margin: 8px 0px;
   padding: 24px;
   box-sizing: border-box;
@@ -108,6 +156,42 @@ body {
   -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
   box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
 }
+
+.why figure .textbox {
+  width: 100%;
+  height: 200px;
+  color: #ffffff;
+  background-color: #071d22;
+}
+
+.rose {
+  grid-column: 14 / 18;
+  grid-row: 11 / 15;
+  align-self: start;
+  justify-self: start;
+}
+
+.rose figure{
+  align-self: flex-start;
+  background-color: white;
+  width: 300px;
+  margin: 8px 0px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.20);
+}
+
+.rose figure .textbox {
+  width: 100%;
+  height: 200px;
+  color: #ffffff;
+  background-color: #071d22;
+}
+
 
 
 
@@ -171,7 +255,7 @@ figure img{
 
 figure .textbox {
   width: 100%;
-  height: 500px;
+  height: 200px;
   color: #ffffff;
   background-color: #071d22;
 }

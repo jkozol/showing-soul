@@ -17,7 +17,7 @@ class About extends React.Component {
         <div className="topbar">
           lies
         </div>
-        <div className="content">
+        <div className="who">
           <figure>
             <div className="textbox">
               hi
@@ -25,6 +25,26 @@ class About extends React.Component {
               My Name is Jacob.
               <br />
               Im sorry you have to see this shit.
+            </div>
+            <figcaption>
+              <Navbar links={links}/>
+            </figcaption>
+          </figure>
+        </div>
+        <div className="why">
+          <figure>
+            <div className="textbox">
+              about about about
+            </div>
+            <figcaption>
+              <Navbar links={links}/>
+            </figcaption>
+          </figure>
+        </div>
+        <div className="what">
+          <figure>
+            <div className="textbox">
+              what what what
             </div>
             <figcaption>
               <Navbar links={links}/>
