@@ -32,6 +32,7 @@ body {
   color: white;
   text-align: center;
   padding-top: 5px;
+  padding-right: 8%;
 }
 
 .logo {
@@ -46,7 +47,7 @@ body {
   background-color: white;
   width: 250px;
   margin: 0px;
-  padding: 24px;
+  padding: 24px 24px 0px 24px;
   box-sizing: border-box;
   background-color: #fff;
   font-family: 'Indie Flower', cursive;
@@ -94,7 +95,7 @@ body {
   background-color: white;
   width: 700px;
   margin: 0px;
-  padding: 24px;
+  padding: 24px 24px 0px 24px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -121,9 +122,9 @@ body {
 .what figure{
   align-self: flex-start;
   background-color: white;
-  width: 300px;
+  width: 320px;
   margin: 0px;
-  padding: 24px;
+  padding: 24px 24px 0px 24px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -153,7 +154,7 @@ body {
   background-color: white;
   width: 300px;
   margin: 8px 0px;
-  padding: 24px;
+  padding: 24px 24px 0px 24px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -182,7 +183,7 @@ body {
   background-color: white;
   width: 300px;
   margin: 8px 0px;
-  padding: 24px;
+  padding: 24px 24px 0px 24px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -277,6 +278,9 @@ figure .textbox {
 
 figure figcaption{
   text-align: center;
-  padding: 8px 4px;
-  color: #071d22
+  padding: 20px 4px;
+  color: #071d22;
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
 }

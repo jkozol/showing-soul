@@ -28,7 +28,8 @@ class About extends React.Component {
               I mean look at this site`} &mdash; {`clutter.
               They say a messy desk is a sign of genius.
               I sure hope so; my desk isn't too messy but please don't look at my code.
-              Most of the time I'm thinking about leaves, or the moon, or bunnies (mine's name is Lilly).
+              Most of the time I'm thinking about leaves, or the moon, or bunnies.
+              My bun's name is Lilly :)
               I like the idea of writing poetry but the pen always seems to get stuck.
               I love music.
               Don't you hate people who skip songs halfway through?
@@ -37,27 +38,32 @@ class About extends React.Component {
               I'm Jacob. Nice to meet you. `}
             </div>
             <figcaption>
-              <Navbar links={links}/>
+              Who
             </figcaption>
           </figure>
         </div>
         <div className="why">
           <figure>
             <div className="textbox">
-              about about about
+              {`Why do I make websites?
+
+                Because you are reading this.`}
             </div>
             <figcaption>
-              <Navbar links={links}/>
+              Why
             </figcaption>
           </figure>
         </div>
         <div className="what">
           <figure>
             <div className="textbox">
-              what what what
+              {`Jacob Kozol
+                Physics, Computer Science
+                Boston
+                21`}
             </div>
             <figcaption>
-              <Navbar links={links}/>
+              What
             </figcaption>
           </figure>
         </div>
