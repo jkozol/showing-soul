@@ -17,9 +17,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(20, 5vw);
-  grid-template-rows: repeat(20, 5vh);
-  grid-gap: 10px;
+  grid-template-columns: repeat(100, 1vw);
+  grid-template-rows: repeat(100, 1vh);
+  /* grid-gap: 10px; */
   /* grid-auto-rows: 200px; */
 }
 
@@ -27,20 +27,18 @@ body {
   grid-column: 1 / -1;
   grid-row: 1;
   z-index: 1;
-  height: 30px;
+  height: 3vh;
   background-color: #071d22;
   color: white;
   text-align: center;
-  padding-top: 5px;
-  padding-right: 9%;
+  padding-top: .5vh;
 }
 
 .profile {
   grid-column: 1 / -1;
-  grid-row: 1 / 18;
+  grid-row: 1 / -1;
   align-self: center;
   justify-self: center;
-  padding-right: 9%;
 }
 
 .profile figure{
@@ -66,8 +64,8 @@ body {
 }
 
 .logo {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 4;
+  grid-row: 9;
   align-self: start;
   justify-self: start;
 }
@@ -100,8 +98,8 @@ body {
 
 
 .who {
-  grid-column: 7 / 15;
-  grid-row: 4 / 10;
+  grid-column: 35 / 65;
+  grid-row: 20 / 50;
   z-index: 1;
   align-self: start;
   justify-self: start;
@@ -112,7 +110,7 @@ body {
   background-color: white;
   width: 700px;
   margin: 0px;
-  padding: 24px 24px 0px 24px;
+  padding: 22px 22px 0px 22px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -123,15 +121,19 @@ body {
 
 .who figure .textbox {
   width: 100%;
-  height: 450px;
+  height: 507px;
   color: #ffffff;
   background-color: #071d22;
 }
 
+.who figcaption {
+  padding: 42px 0px;
+}
+
 
 .what {
-  grid-column: 5 / 9;
-  grid-row: 2 / 7;
+  grid-column: 22 / 45;
+  grid-row: 10 / 35;
   align-self: start;
   justify-self: start;
 }
@@ -139,9 +141,9 @@ body {
 .what figure{
   align-self: flex-start;
   background-color: white;
-  width: 320px;
+  width: 300px;
   margin: 0px;
-  padding: 24px 24px 0px 24px;
+  padding: 17px 17px 0px 17px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -152,15 +154,19 @@ body {
 
 .what figure .textbox {
   width: 100%;
-  height: 200px;
+  height: 280px;
   color: #ffffff;
   background-color: #071d22;
 }
 
+.what figcaption {
+  padding: 20px 0px;
+}
+
 .why {
   margin-top: 32px;
-  grid-column: 14 / 18;
-  grid-row: 10 / 15;
+  grid-column: 70 / 90;
+  grid-row: 50 / 75;
   align-self: start;
   justify-self: start;
   z-index: 1;
@@ -171,7 +177,7 @@ body {
   background-color: white;
   width: 300px;
   margin: 8px 0px;
-  padding: 24px 24px 0px 24px;
+  padding: 19px 19px 0px 19px;
   box-sizing: border-box;
   background-color: #fff;
 
@@ -182,17 +188,21 @@ body {
 
 .why figure .textbox {
   width: 100%;
-  height: 200px;
+  height: 217px;
   color: #ffffff;
   background-color: #071d22;
 }
 
+.why figcaption {
+  padding: 14px 0px;
+}
+
 .aesthetic {
-  grid-column: 13 / 14;
-  grid-row: 3 / 4;
+  grid-column: 65 / 80;
+  grid-row: 15 / 20;
   align-self: start;
   justify-self: start;
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 .aesthetic figure{
@@ -213,6 +223,10 @@ body {
 .aesthetic figure img{
   width: 100%;
   /* height: 300px; */
+}
+
+.aesthetic figcaption {
+
 }
 
 /* .aesthetic figure .textbox {
@@ -297,7 +311,7 @@ figure figcaption{
   text-align: center;
   padding: 20px 4px;
   color: #071d22;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Indie Flower', cursive;
   font-weight: 600;
 }
