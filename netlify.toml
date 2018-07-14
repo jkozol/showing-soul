@@ -1,0 +1,15 @@
+[Settings]
+ID = "practical-jennings-ae8b62"
+
+# Deploy Preview context: All Deploy Previews (https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/)
+# will inherit these settings.
+
+# The following redirect is intended for use with most SPA's that handles routing internally.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

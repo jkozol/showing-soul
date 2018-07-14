@@ -9,12 +9,12 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: path.resolve('./build'),
+    path: path.resolve('./dist'),
     filename: '[name].[hash].js'
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './build',
+    contentBase: './dist',
     open: true
   },
   module: {
@@ -37,7 +37,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin('build', {} ),
+    new CleanWebpackPlugin('./dist', {} ),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css',
     }),
