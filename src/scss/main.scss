@@ -106,12 +106,12 @@ a:hover {
 }
 
 .profile figcaption {
- padding: 50px 0px;
- font-size: 66px;
+ padding: 60px 0px;
+ font-size: 55px;
 }
 
 .profile li {
- padding: 0px 18px;
+ padding: 0px 12px;
 }
 
 .logo {
@@ -139,11 +139,12 @@ a:hover {
 
 .logo figcaption {
  padding: 16px 0px;
- font-size: 24px;
+ font-size: 20px;
+ font-weight: 600;
 }
 
 .logo li {
- padding: 0px 6px;
+ padding: 0px 4px;
 }
 
 
@@ -259,7 +260,6 @@ a:hover {
  grid-row: 11;
  align-self: start;
  justify-self: start;
- /* z-index: 2; */
 }
 
 .aesthetic figure {

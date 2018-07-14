@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const links = [
   {to: '/gallery', name: 'Gallery'},
   {to: '/about', name: 'About'},
-  {to: '/work', name: 'Work'}
+  {to: '/projects', name: 'Projects'}
 ];
 
 const Logo = () => (

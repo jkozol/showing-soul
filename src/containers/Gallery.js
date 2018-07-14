@@ -9,17 +9,11 @@ import img4 from '../../images/img4.jpg';
 
 class Gallery extends React.Component {
   render() {
-    const links = [
-      {to: '/about', name: 'About'},
-      {to: '/gallery', name: 'Gallery'},
-      {to: '/work', name: 'Work'}
-    ];
-
     return (
-      <div className="container-top">
+      <div className="container">
         <Logo />
         <div className="topbar">
-        hi
+          a e s t h e t i c
         </div>
         <div className="gallery">
           <figure>

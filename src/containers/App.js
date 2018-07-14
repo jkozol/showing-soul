@@ -1,32 +1,21 @@
 import React from 'react';
 import Home from './Home';
 import Gallery from './Gallery';
-import Work from './Work';
+import Projects from './Projects';
 import About from './About';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch, Redirect } from 'react-router-dom';
 
-// const App = () => (
-//   <div>
-//     <Main />
-//   </div>
-// );
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/gallery' component={Gallery}/>
           <Route path='/about' component={About}/>
-          <Route path='/work' component={Work}/>
+          <Route path='/projects' component={Projects}/>
         </Switch>
-      </Router>
+      </BrowserRouter>
     );
   }
 }

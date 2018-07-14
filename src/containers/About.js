@@ -6,15 +6,9 @@ import flowers from '../../images/flowers.jpg';
 
 class About extends React.Component {
   render() {
-    const links = [
-      {to: '/gallery', name: 'Gallery'},
-      {to: '/about', name: 'About'},
-      {to: '/work', name: 'Work'}
-    ];
-
     return (
       <div className="container">
-        <Logo />
+        <Logo/>
         <div className="topbar">
           lies
         </div>
