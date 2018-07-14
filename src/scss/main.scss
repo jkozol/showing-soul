@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+ @import url('https://fonts.googleapis.com/css?family=Lora');
 
 * {box-sizing: border-box;}
 
@@ -26,9 +27,8 @@ figure .textbox {
  height: 200px;
  color: #ffffff;
  background-color: #071d22;
- padding: 20px 20px;
- font-size: 18px;
- line-height: 1.45;
+ font-size: 20px;
+ font-family: 'Lora', serif;
  white-space: pre-line;
 }
 
@@ -106,17 +106,17 @@ a:hover {
 }
 
 .profile figcaption {
- padding: 70px 0px;
+ padding: 50px 0px;
+ font-size: 66px;
 }
 
 .profile li {
- padding: 0px 32px;
- font-size: 40px;
+ padding: 0px 18px;
 }
 
 .logo {
  grid-column: 3;
- grid-row: 8;
+ grid-row: 7;
  align-self: start;
  justify-self: start;
 }
@@ -148,8 +148,8 @@ a:hover {
 
 
 .who {
- grid-column: 30 / 65;
- grid-row: 18 / 50;
+ grid-column: 31;
+ grid-row: 16;
  z-index: 1;
  align-self: start;
  justify-self: start;
@@ -158,9 +158,9 @@ a:hover {
 .who figure {
  align-self: flex-start;
  background-color: white;
- width: 700px;
+ width: 815px;
  margin: 0px;
- padding: 43px 43px 0px 43px;
+ padding: 45px 45px 0px 45px;
  box-sizing: border-box;
 
  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -170,21 +170,23 @@ a:hover {
 
 .who figure .textbox {
  width: 100%;
- height: 507px;
+ height: 587px;
+ padding: 19px 25px;
+ line-height: 1.6;
  color: #ffffff;
  background-color: #071d22;
 }
 
 .who figcaption {
- padding: 40px 0px;
- font-size: 86px;
- font-weight: 200;
+ padding: 30px 0px;
+ font-size: 66px;
+ font-weight: 300;
 }
 
 
 .what {
- grid-column: 20 / 45;
- grid-row: 8 / 35;
+ grid-column: 20;
+ grid-row: 7;
  align-self: start;
  justify-self: start;
 }
@@ -192,9 +194,9 @@ a:hover {
 .what figure {
  align-self: flex-start;
  background-color: white;
- width: 300px;
+ width: 330px;
  margin: 0px;
- padding: 17px 17px 0px 17px;
+ padding: 19px 19px 0px 19px;
  box-sizing: border-box;
 
  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -204,20 +206,22 @@ a:hover {
 
 .what figure .textbox {
  width: 100%;
- height: 265px;
+ height: 292px;
+ padding: 7px 12px;
+ line-height: 1.5;
  color: #ffffff;
  background-color: #071d22;
 }
 
 .what figcaption {
- padding: 20px 0px;
+ padding: 25px 0px;
  font-size: 34px;
 }
 
 .why {
  margin-top: 32px;
- grid-column: 70 / 90;
- grid-row: 50 / 75;
+ grid-column: 75;
+ grid-row: 52;
  align-self: start;
  justify-self: start;
  z-index: 1;
@@ -226,9 +230,9 @@ a:hover {
 .why figure {
  align-self: flex-start;
  background-color: white;
- width: 360px;
- margin: 8px 0px;
- padding: 22px 22px 0px 22px;
+ width: 380px;
+ margin: 0px;
+ padding: 24px 24px 0px 24px;
  box-sizing: border-box;
 
  -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -238,19 +242,21 @@ a:hover {
 
 .why figure .textbox {
  width: 100%;
- height: 261px;
+ height: 275px;
+ padding: 9px 15px;
+ line-height: 1.6;
  color: #ffffff;
  background-color: #071d22;
 }
 
 .why figcaption {
  padding: 25px 0px;
- font-size: 36px;
+ font-size: 40px;
 }
 
 .aesthetic {
- grid-column: 65 / 80;
- grid-row: 15 / 20;
+ grid-column: 70;
+ grid-row: 11;
  align-self: start;
  justify-self: start;
  /* z-index: 2; */

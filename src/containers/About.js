@@ -35,6 +35,7 @@ class About extends React.Component {
               Don't you hate people who skip songs halfway through?
               I am that person.
               So, who am I?
+
               I'm Jacob. Nice to meet you. `}
             </div>
             <figcaption>
