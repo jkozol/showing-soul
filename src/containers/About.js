@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo'
-import logo from '../images/me.jpg'
-import flowers from '../images/flowers.jpg';
+import logo from '../../images/me.jpg'
+import flowers from '../../images/flowers.jpg';
 
 class About extends React.Component {
   render() {
