@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo'
-import logo from '../../images/me.jpg'
-import flowers from '../../images/flowers.jpg';
+import flowers from '../../images/flowers.png';
+import lilly from '../../images/lillyPolaroid.png';
 
 class About extends React.Component {
   render() {
@@ -62,13 +62,21 @@ class About extends React.Component {
             </figcaption>
           </figure>
         </div>
-        <div className="aesthetic">
+        <div className="aesthetic flowers">
           <figure>
             <img src={flowers}/>
             <figcaption>
             </figcaption>
           </figure>
         </div>
+        <div className="aesthetic lilly">
+          <figure>
+            <img src={lilly}/>
+            <figcaption>
+            </figcaption>
+          </figure>
+        </div>
+
       </div>
     );
   }
