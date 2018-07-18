@@ -1,324 +1,442 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
- @import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-extra-small{
+  @media (min-width: 900) { @content; }
+}
+@mixin for-desktop-small{
+  @media (min-width: 1024px) { @content; }
+}
+@mixin for-desktop-medium{
+  @media (min-width: 1440px) { @content; }
+}
+@mixin for-desktop-large {
+  @media (min-width: 1650px) { @content; }
+}
+@mixin for-desktop-extra-large {
+  @media (min-width: 1850px) { @content; }
+}
 
 * {box-sizing: border-box;}
 
 html {
- background-color: #071d22;
- height: 100vh;
- overflow: hidden;
+  background-color: #071d22;
+  height: 100vh;
+  overflow: hidden;
 }
 
 body {
- background-color: #f2c8aa;
- height: 100vh;
- width: 100vw;
- margin: 0px;
+  background-color: #f2c8aa;
+  height: 100vh;
+  margin: 0px 0px;
 }
 
-
 figure img {
- width: 100%;
- display: block;
+  width: 100%;
+  display: block;
 }
 
 figure .textbox {
- width: 100%;
- height: 200px;
- color: #ffffff;
- background-color: #071d22;
- font-size: 20px;
- font-family: 'Lora', serif;
- white-space: pre-line;
+  width: 100%;
+  color: #ffffff;
+  background-color: #071d22;
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  white-space: pre-line;
 }
 
 figure figcaption {
- text-align: center;
- padding: 20px 4px;
- color: #071d22;
- font-size: 24px;
- font-family: 'Indie Flower', cursive;
- font-weight: 600;
+  text-align: center;
+  color: #071d22;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
 }
 
 nav ul {
- list-style: none;
- padding-left: 0px;
- margin: 0px;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 nav ul li {
- display: inline-block;
- /* float:left; */
- text-align: center;
- font-family: 'Indie Flower', cursive;
- font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
 }
 
 a {
- text-decoration: none;
- color: lightgrey;
+  text-decoration: none;
+  color: lightgrey;
 }
 
 a:hover {
- color: #071d22;
+  color: #071d22;
 }
 
 .active {
- color: #071d22;
+  color: #071d22;
 }
 
 .container {
- display: grid;
- grid-template-columns: repeat(100, 1vw);
- grid-template-rows: repeat(100, 1vh);
+  display: grid;
+  grid-template-columns: repeat(100, 1vw);
+  grid-template-rows: repeat(100, 1vh);
 }
 
 .topbar {
- grid-column: 1 / -1;
- grid-row: 1;
- z-index: 1;
- height: 3vh;
- background-color: #071d22;
- color: white;
- text-align: center;
- padding-top: 0.5vh;
+  @include for-desktop-medium {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    z-index: 1;
+    height: 3vh;
+    background-color: #071d22;
+    color: white;
+    text-align: center;
+    padding-top: 0.5vh;
+  }
 }
 
 .profile {
- grid-column: 1 / -1;
- grid-row: 1 / -1;
- align-self: center;
- justify-self: center;
+  @include for-desktop-medium {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 .profile figure {
- align-self: flex-start;
- background-color: white;
- width: 700px;
- margin: 0px;
- padding: 40px 40px 0px 40px;
- box-sizing: border-box;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 700px;
+    margin: 0px;
+    padding: 40px 40px 0px 40px;
+    box-sizing: border-box;
 
- -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
 }
 
 .profile figcaption {
- padding: 60px 0px;
- font-size: 55px;
+  @include for-desktop-medium {
+    padding: 60px 0px;
+    font-size: 55px;
+  }
 }
 
 .profile li {
- padding: 0px 12px;
+  @include for-desktop-medium {
+    padding: 0px 12px;
+  }
 }
 
 .logo {
- grid-column: 3;
- grid-row: 7;
- align-self: start;
- justify-self: start;
+  @include for-desktop-medium {
+    grid-column: 3;
+    grid-row: 7;
+    align-self: start;
+    justify-self: start;
+  }
 }
 
 .logo figure {
- align-self: flex-start;
- background-color: white;
- width: 250px;
- margin: 0px;
- padding: 14px 14px 0px 14px;
- box-sizing: border-box;
- font-family: 'Indie Flower', cursive;
- font-size: 20px;
- font-weight: 600;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 250px;
+    margin: 0px;
+    padding: 14px 14px 0px 14px;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: 600;
 
- -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
 }
 
 .logo figcaption {
- padding: 16px 0px;
- font-size: 20px;
- font-weight: 600;
+  @include for-desktop-medium {
+    padding: 16px 0px;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 .logo li {
- padding: 0px 4px;
+  @include for-desktop-medium {
+    padding: 0px 4px;
+  }
 }
 
 
 .who {
- grid-column: 31;
- grid-row: 16;
- z-index: 2;
- align-self: start;
- justify-self: start;
+  @include for-desktop-medium {
+    grid-column: 31;
+    grid-row: 16;
+    z-index: 2;
+    align-self: start;
+    justify-self: start;
+  }
 }
 
 .who figure {
- align-self: flex-start;
- background-color: white;
- width: 815px;
- margin: 0px;
- padding: 45px 45px 0px 45px;
- box-sizing: border-box;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 815px;
+    margin: 0px;
+    padding: 45px 45px 0px 45px;
+    box-sizing: border-box;
 
- -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
 }
 
 .who figure .textbox {
- width: 100%;
- height: 587px;
- padding: 19px 25px;
- line-height: 1.6;
- color: #ffffff;
- background-color: #071d22;
+  @include for-desktop-medium {
+    width: 100%;
+    height: 587px;
+    padding: 19px 25px;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #071d22;
+  }
 }
 
 .who figcaption {
- padding: 30px 0px;
- font-size: 66px;
- font-weight: 300;
+  @include for-desktop-medium {
+    padding: 30px 0px;
+    font-size: 66px;
+    font-weight: 300;
+  }
 }
 
 
 .what {
- grid-column: 20;
- grid-row: 7;
- align-self: start;
- justify-self: start;
+  @include for-desktop-medium {
+    grid-column: 22;
+    grid-row: 7;
+    align-self: start;
+    justify-self: start;
+  }
+
+  @include for-desktop-large {
+    grid-column: 20;
+    grid-row: 7;
+    align-self: start;
+    justify-self: start;
+  }
 }
 
 .what figure {
- align-self: flex-start;
- background-color: white;
- width: 330px;
- margin: 0px;
- padding: 19px 19px 0px 19px;
- box-sizing: border-box;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 330px;
+    margin: 0px;
+    padding: 19px 19px 0px 19px;
+    box-sizing: border-box;
 
- -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
 }
 
 .what figure .textbox {
- width: 100%;
- height: 292px;
- padding: 7px 12px;
- line-height: 1.5;
- color: #ffffff;
- background-color: #071d22;
+  @include for-desktop-medium {
+    width: 100%;
+    height: 292px;
+    padding: 7px 12px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #071d22;
+  }
 }
 
 .what figcaption {
- padding: 25px 0px;
- font-size: 34px;
+  @include for-desktop-medium {
+    padding: 25px 0px;
+    font-size: 34px;
+  }
 }
 
 .why {
- margin-top: 3px;
- grid-column: 79;
- grid-row: 55;
- align-self: start;
- justify-self: start;
- z-index: 1;
+  @include for-desktop-medium {
+    margin-top: 3px;
+    grid-column: 50;
+    grid-row: 55;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+
+  @include for-desktop-large {
+    margin-top: 3px;
+    grid-column: 77;
+    grid-row: 55;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+
+  @include for-desktop-extra-large {
+    margin-top: 3px;
+    grid-column: 79;
+    grid-row: 55;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+
 }
 
 .why figure {
- align-self: flex-start;
- background-color: white;
- width: 380px;
- margin: 0px;
- padding: 24px 24px 0px 24px;
- box-sizing: border-box;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 380px;
+    margin: 0px;
+    padding: 24px 24px 0px 24px;
+    box-sizing: border-box;
 
- -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
 }
 
 .why figure .textbox {
- width: 100%;
- height: 275px;
- padding: 9px 15px;
- line-height: 1.6;
- color: #ffffff;
- background-color: #071d22;
+  @include for-desktop-medium {
+    width: 100%;
+    height: 275px;
+    padding: 9px 15px;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #071d22;
+  }
 }
 
 .why figcaption {
- padding: 25px 0px;
- font-size: 40px;
+  @include for-desktop-medium {
+    padding: 25px 0px;
+    font-size: 40px;
+  }
 }
 
 .aesthetic {
- align-self: start;
- justify-self: start;
+  @include for-desktop-medium {
+    align-self: start;
+    justify-self: start;
+  }
 }
 
 .aesthetic figure {
- align-self: flex-start;
- background-color: white;
- width: 250px;
- margin: 8px 0px;
- padding: 14px 14px 0px 14px;
- box-sizing: border-box;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 250px;
+    margin: 8px 0px;
+    padding: 14px 14px 0px 14px;
+    box-sizing: border-box;
 
- -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
- box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
 }
 
 .aesthetic figure img {
- width: 100%;
+  @include for-desktop-medium {
+    width: 100%;
+  }
 }
 
 .aesthetic figcaption {
-  padding: 32px 0px;
+  @include for-desktop-medium {
+    padding: 32px 0px;
+    font-size: 24px;
+  }
 }
 
 .lilly {
-  z-index: 1;
-  grid-column: 72;
-  grid-row: 11;
+  @include for-desktop-medium {
+    z-index: 1;
+    grid-column: 82;
+    grid-row: 11;
+  }
+
+  @include for-desktop-large {
+    z-index: 1;
+    grid-column: 76;
+    grid-row: 11;
+  }
+
+  @include for-desktop-extra-large {
+    z-index: 1;
+    grid-column: 72;
+    grid-row: 11;
+  }
 }
 //
 .flowers {
-  grid-column: 12;
-  grid-row: 56;
+  @include for-desktop-medium {
+    grid-column: 12;
+    grid-row: 51;
+  }
+  @include for-desktop-large {
+    grid-column: 12;
+    grid-row: 54;
+  }
+  @include for-desktop-extra-large {
+    grid-column: 12;
+    grid-row: 56;
+  }
 }
-
-// .flowers {
-//   grid-column: 72;
-//   grid-row: 40;
-// }
-
 
 
 .gallery {
+  @include for-desktop-medium {
  /* grid */
- grid-area: main;
- align-self: center;
- justify-self: center;
- /* flexbox */
- display: flex;
- width: 900px;
- margin: auto;
- justify-content: space-between;
- flex-wrap: wrap;
- border: 2px dashed gray;
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+    /* flexbox */
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px dashed gray;
+  }
 }
 
 .gallery figure {
- align-self: flex-start;
- background-color: white;
- width: 200px;
- margin: 8px 0px;
- border: 1px solid #777;
- padding: 8px;
- box-sizing: border-box;
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
+    width: 200px;
+    margin: 8px 0px;
+    border: 1px solid #777;
+    padding: 8px;
+    box-sizing: border-box;
+  }
 }
