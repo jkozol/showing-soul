@@ -10,13 +10,13 @@
 @mixin for-tablet-landscape {
   @media (min-width: 900px) { @content; }
 }
-@mixin for-desktop-extra-small{
-  @media (min-width: 900) { @content; }
+@mixin for-desktop-extra-small {
+  @media (min-width: 900px) { @content; }
 }
-@mixin for-desktop-small{
+@mixin for-desktop-small {
   @media (min-width: 1024px) { @content; }
 }
-@mixin for-desktop-medium{
+@mixin for-desktop-medium {
   @media (min-width: 1440px) { @content; }
 }
 @mixin for-desktop-large {
@@ -49,7 +49,6 @@ figure .textbox {
   width: 100%;
   color: #ffffff;
   background-color: #071d22;
-  font-size: 20px;
   font-family: 'Lora', serif;
   white-space: pre-line;
 }
@@ -94,7 +93,7 @@ a:hover {
 }
 
 .topbar {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     grid-column: 1 / -1;
     grid-row: 1;
     z-index: 1;
@@ -107,7 +106,7 @@ a:hover {
 }
 
 .profile {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     align-self: center;
@@ -116,12 +115,12 @@ a:hover {
 }
 
 .profile figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
-    width: 700px;
+    width: 36.5vw;
     margin: 0px;
-    padding: 40px 40px 0px 40px;
+    padding: 4.1vh 2.1vw 0px 2.1vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -131,20 +130,20 @@ a:hover {
 }
 
 .profile figcaption {
-  @include for-desktop-medium {
-    padding: 60px 0px;
-    font-size: 55px;
+  @include for-desktop-extra-small {
+    padding: 6.2vh 0px;
+    font-size: 5.7vh;
   }
 }
 
 .profile li {
-  @include for-desktop-medium {
-    padding: 0px 12px;
+  @include for-desktop-extra-small {
+    padding: 0px 0.6vw;
   }
 }
 
 .logo {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     grid-column: 3;
     grid-row: 7;
     align-self: start;
@@ -153,15 +152,15 @@ a:hover {
 }
 
 .logo figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
-    width: 250px;
+    width: 13vw;
     margin: 0px;
-    padding: 14px 14px 0px 14px;
+    padding: 1.5vh 0.75vw 0px 0.75vw;
     box-sizing: border-box;
     font-family: 'Indie Flower', cursive;
-    font-size: 20px;
+    font-size: 2.1vh;
     font-weight: 600;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -170,23 +169,24 @@ a:hover {
   }
 }
 
+
 .logo figcaption {
-  @include for-desktop-medium {
-    padding: 16px 0px;
-    font-size: 20px;
+  @include for-desktop-extra-small {
+    padding: 1.65vh 0px;
+    font-size: 2.1vh;
     font-weight: 600;
   }
 }
 
 .logo li {
-  @include for-desktop-medium {
-    padding: 0px 4px;
+  @include for-desktop-extra-small {
+    padding: 0px 0.2vw;
   }
 }
 
 
 .who {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     grid-column: 31;
     grid-row: 16;
     z-index: 2;
@@ -196,12 +196,12 @@ a:hover {
 }
 
 .who figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
-    width: 815px;
+    width: 42.5vw;
     margin: 0px;
-    padding: 45px 45px 0px 45px;
+    padding: 4.6vh 2.3vw 0px 2.3vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -211,10 +211,11 @@ a:hover {
 }
 
 .who figure .textbox {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     width: 100%;
-    height: 587px;
-    padding: 19px 25px;
+    height: 60.4vh;
+    font-size: 2.1vh;
+    padding: 2vh 1.3vw;
     line-height: 1.6;
     color: #ffffff;
     background-color: #071d22;
@@ -222,16 +223,16 @@ a:hover {
 }
 
 .who figcaption {
-  @include for-desktop-medium {
-    padding: 30px 0px;
-    font-size: 66px;
+  @include for-desktop-extra-small {
+    padding: 3.1vh 0px;
+    font-size: 6.8vh;
     font-weight: 300;
   }
 }
 
 
 .what {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     grid-column: 22;
     grid-row: 7;
     align-self: start;
@@ -247,12 +248,12 @@ a:hover {
 }
 
 .what figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
-    width: 330px;
+    width: 17.2vw;
     margin: 0px;
-    padding: 19px 19px 0px 19px;
+    padding: 2vh 1vw 0px 1vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -262,10 +263,11 @@ a:hover {
 }
 
 .what figure .textbox {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     width: 100%;
-    height: 292px;
-    padding: 7px 12px;
+    height: 30vh;
+    padding: 0.7vh 0.6vw;
+    font-size: 2.1vh;
     line-height: 1.5;
     color: #ffffff;
     background-color: #071d22;
@@ -273,49 +275,55 @@ a:hover {
 }
 
 .what figcaption {
-  @include for-desktop-medium {
-    padding: 25px 0px;
-    font-size: 34px;
+  @include for-desktop-extra-small {
+    padding: 2.6vh 0px;
+    font-size: 3.5vh;
   }
 }
 
 .why {
-  @include for-desktop-medium {
-    margin-top: 3px;
-    grid-column: 74;
-    grid-row: 57;
-    align-self: start;
-    justify-self: start;
-    z-index: 2;
-  }
+  // @include for-desktop-extra-small {
+  //   grid-column: 74;
+  //   grid-row: 57;
+  //   align-self: start;
+  //   justify-self: start;
+  //   z-index: 2;
+  // }
 
-  @include for-desktop-large {
-    margin-top: 3px;
-    grid-column: 78;
-    grid-row: 49;
-    align-self: start;
-    justify-self: start;
-    z-index: 1;
-  }
-
-  @include for-desktop-extra-large {
-    margin-top: 3px;
+  // @include for-desktop-large {
+  //   margin-top: 3px;
+  //   grid-column: 78;
+  //   grid-row: 49;
+  //   align-self: start;
+  //   justify-self: start;
+  //   z-index: 1;
+  // }
+  // //
+  // @include for-desktop-extra-large {
+  //   margin-top: 3px;
+  //   grid-column: 79;
+  //   grid-row: 55;
+  //   align-self: start;
+  //   justify-self: start;
+  //   z-index: 1;
+  // }
+  //
+  @include for-desktop-extra-small {
     grid-column: 79;
     grid-row: 55;
     align-self: start;
     justify-self: start;
     z-index: 1;
   }
-
 }
 
 .why figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
-    width: 380px;
+    width: 19.8vw;
     margin: 0px;
-    padding: 24px 24px 0px 24px;
+    padding: 2.5vh 1.25vw 0px 1.25vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -325,10 +333,11 @@ a:hover {
 }
 
 .why figure .textbox {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     width: 100%;
-    height: 275px;
-    padding: 9px 15px;
+    height: 28.3vh;
+    padding: 0.9vh 0.8vw;
+    font-size: 2.1vh;
     line-height: 1.6;
     color: #ffffff;
     background-color: #071d22;
@@ -336,26 +345,26 @@ a:hover {
 }
 
 .why figcaption {
-  @include for-desktop-medium {
-    padding: 25px 0px;
-    font-size: 40px;
+  @include for-desktop-extra-small {
+    padding: 2.6vh 0px;
+    font-size: 4.1vh;
   }
 }
 
 .aesthetic {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: start;
     justify-self: start;
   }
 }
 
 .aesthetic figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
-    width: 250px;
-    margin: 8px 0px;
-    padding: 14px 14px 0px 14px;
+    width: 13vw;
+    margin: 0.8vh 0px;
+    padding: 1.4vh 0.7vw 0px 0.7vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -365,32 +374,37 @@ a:hover {
 }
 
 .aesthetic figure img {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     width: 100%;
   }
 }
 
 .aesthetic figcaption {
-  @include for-desktop-medium {
-    padding: 32px 0px;
-    font-size: 24px;
+  @include for-desktop-extra-small {
+    padding: 3.3vh 0px;
+    font-size: 2.5vh;
   }
 }
 
 .lilly {
-  @include for-desktop-medium {
-    z-index: 1;
-    grid-column: 82;
-    grid-row: 11;
-  }
-
-  @include for-desktop-large {
-    z-index: 1;
-    grid-column: 76;
-    grid-row: 11;
-  }
-
-  @include for-desktop-extra-large {
+  // @include for-desktop-extra-small {
+  //   z-index: 1;
+  //   grid-column: 82;
+  //   grid-row: 11;
+  // }
+  //
+  // @include for-desktop-large {
+  //   z-index: 1;
+  //   grid-column: 76;
+  //   grid-row: 11;
+  // }
+  //
+  // @include for-desktop-extra-large {
+  //   z-index: 1;
+  //   grid-column: 72;
+  //   grid-row: 11;
+  // }
+  @include for-desktop-extra-small {
     z-index: 1;
     grid-column: 72;
     grid-row: 11;
@@ -398,15 +412,19 @@ a:hover {
 }
 //
 .flowers {
-  @include for-desktop-medium {
-    grid-column: 12;
-    grid-row: 49;
-  }
-  @include for-desktop-large {
-    grid-column: 12;
-    grid-row: 54;
-  }
-  @include for-desktop-extra-large {
+  // @include for-desktop-extra-small {
+  //   grid-column: 12;
+  //   grid-row: 49;
+  // }
+  // @include for-desktop-large {
+  //   grid-column: 12;
+  //   grid-row: 54;
+  // }
+  // @include for-desktop-extra-large {
+  //   grid-column: 12;
+  //   grid-row: 56;
+  // }
+  @include for-desktop-extra-small {
     grid-column: 12;
     grid-row: 56;
   }
@@ -414,7 +432,7 @@ a:hover {
 
 
 .gallery {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
  /* grid */
     grid-area: main;
     align-self: center;
@@ -430,7 +448,7 @@ a:hover {
 }
 
 .gallery figure {
-  @include for-desktop-medium {
+  @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
     width: 200px;
