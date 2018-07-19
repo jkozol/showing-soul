@@ -282,17 +282,17 @@ a:hover {
 .why {
   @include for-desktop-medium {
     margin-top: 3px;
-    grid-column: 50;
-    grid-row: 55;
+    grid-column: 74;
+    grid-row: 57;
     align-self: start;
     justify-self: start;
-    z-index: 1;
+    z-index: 2;
   }
 
   @include for-desktop-large {
     margin-top: 3px;
-    grid-column: 77;
-    grid-row: 55;
+    grid-column: 78;
+    grid-row: 49;
     align-self: start;
     justify-self: start;
     z-index: 1;
@@ -400,7 +400,7 @@ a:hover {
 .flowers {
   @include for-desktop-medium {
     grid-column: 12;
-    grid-row: 51;
+    grid-row: 49;
   }
   @include for-desktop-large {
     grid-column: 12;
