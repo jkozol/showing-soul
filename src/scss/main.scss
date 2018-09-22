@@ -26,6 +26,46 @@
   @media (min-width: 1850px) { @content; }
 }
 
+@-webkit-keyframes fade-in-back {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  50% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-in-back {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  50% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in-front {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  65% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-in-front {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  65% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in-logo {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-in-logo {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
 * {box-sizing: border-box;}
 
 html {
@@ -112,6 +152,8 @@ a:hover {
   }
 }
 
+
+
 .profile {
   @include for-desktop-extra-small {
     grid-column: 1 / -1;
@@ -160,6 +202,8 @@ a:hover {
     align-self: start;
     justify-self: start;
   }
+  -webkit-animation: fade-in-logo 1s linear forwards;
+  animation: fade-in-logo 1s linear forwards;
 }
 
 .logo figure {
@@ -205,6 +249,8 @@ a:hover {
     align-self: start;
     justify-self: start;
   }
+  -webkit-animation: fade-in-front 2s linear forwards;
+  animation: fade-in-front 2s linear forwards;
 }
 
 .who figure {
@@ -280,6 +326,9 @@ a:hover {
     align-self: start;
     justify-self: start;
   }
+
+  -webkit-animation: fade-in-back 1.5s linear forwards;
+  animation: fade-in-back 1.5s linear forwards;
 }
 
 .what figure {
@@ -364,6 +413,9 @@ a:hover {
     justify-self: start;
     z-index: 1;
   }
+
+  -webkit-animation: fade-in-back 1.5s linear forwards;
+  animation: fade-in-back 1.5s linear forwards;
 }
 
 .why figure {
@@ -458,6 +510,8 @@ a:hover {
     grid-column: 72;
     grid-row: 11;
   }
+  -webkit-animation: fade-in-back 1.5s linear forwards;
+  animation: fade-in-back 1.5s linear forwards;
 }
 //
 .flowers {
@@ -494,6 +548,8 @@ a:hover {
     justify-self: start;
     z-index: 1;
   }
+  -webkit-animation: fade-in-back 1.5s linear forwards;
+  animation: fade-in-back 1.5s linear forwards;
 }
 
 
