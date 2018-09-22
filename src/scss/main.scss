@@ -87,9 +87,16 @@ a:hover {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(100, 1vw);
-  grid-template-rows: repeat(100, 1vh);
+  @include for-phone-only {
+    display: grid;
+    grid-template-columns: repeat(100, 1vw);
+    grid-template-rows: repeat(100, 1vh);
+  }
+  @include for-desktop-extra-small {
+    display: grid;
+    grid-template-columns: repeat(100, 1vw);
+    grid-template-rows: repeat(100, 1vh);
+  }
 }
 
 .topbar {
@@ -130,9 +137,13 @@ a:hover {
 }
 
 .profile figcaption {
+  // @include for-desktop-extra-small {
+  //   padding: 5.3vh 0px;
+  //   font-size: 5.0vh;
+  // }
   @include for-desktop-extra-small {
-    padding: 6.2vh 0px;
-    font-size: 5.7vh;
+    padding: 2.9vw 0px;
+    font-size: 2.7vw;
   }
 }
 
@@ -173,7 +184,8 @@ a:hover {
 .logo figcaption {
   @include for-desktop-extra-small {
     padding: 1.65vh 0px;
-    font-size: 2.1vh;
+    // font-size: 2.1vh;
+    font-size: 1vw;
     font-weight: 600;
   }
 }
@@ -199,9 +211,23 @@ a:hover {
   @include for-desktop-extra-small {
     align-self: flex-start;
     background-color: white;
+    // width: 42.5vw;
+    width: 43vw;
+    margin: 0px;
+    padding: 2.3vw 2.3vw 0px 2.3vw;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
+  }
+
+  @include for-desktop-medium {
+    align-self: flex-start;
+    background-color: white;
     width: 42.5vw;
     margin: 0px;
-    padding: 4.6vh 2.3vw 0px 2.3vw;
+    padding: 2.3vw 2.3vw 0px 2.3vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -213,10 +239,20 @@ a:hover {
 .who figure .textbox {
   @include for-desktop-extra-small {
     width: 100%;
-    height: 60.4vh;
-    font-size: 2.1vh;
-    padding: 2vh 1.3vw;
-    line-height: 1.6;
+    height: 34vw;
+    font-size: 1vw;
+    padding: 1.3vw 1.3vw;
+    line-height: 1.8;
+    color: #ffffff;
+    background-color: #071d22;
+  }
+
+  @include for-desktop-large {
+    width: 100%;
+    height: 34vw;
+    font-size: 1.05vw;
+    padding: 1.3vw 1.3vw;
+    line-height: 1.8;
     color: #ffffff;
     background-color: #071d22;
   }
@@ -224,9 +260,9 @@ a:hover {
 
 .who figcaption {
   @include for-desktop-extra-small {
-    padding: 3.1vh 0px;
-    font-size: 6.8vh;
-    font-weight: 300;
+    padding: 1.5vw 0px;
+    font-size: 3.4vw;
+    font-weight: 400;
   }
 }
 
@@ -253,7 +289,7 @@ a:hover {
     background-color: white;
     width: 17.2vw;
     margin: 0px;
-    padding: 2vh 1vw 0px 1vw;
+    padding: 1vw 1vw 0px 1vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -265,9 +301,9 @@ a:hover {
 .what figure .textbox {
   @include for-desktop-extra-small {
     width: 100%;
-    height: 30vh;
-    padding: 0.7vh 0.6vw;
-    font-size: 2.1vh;
+    height: 16vw;
+    padding: 0.6vw 0.6vw;
+    font-size: 1.1vw;
     line-height: 1.5;
     color: #ffffff;
     background-color: #071d22;
@@ -276,8 +312,8 @@ a:hover {
 
 .what figcaption {
   @include for-desktop-extra-small {
-    padding: 2.6vh 0px;
-    font-size: 3.5vh;
+    padding: 0.8vw 0px;
+    font-size: 1.8vw;
   }
 }
 
@@ -310,6 +346,20 @@ a:hover {
   //
   @include for-desktop-extra-small {
     grid-column: 79;
+    grid-row: 45;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+  @include for-desktop-small {
+    grid-column: 79;
+    grid-row: 50;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+  @include for-desktop-medium {
+    grid-column: 79;
     grid-row: 55;
     align-self: start;
     justify-self: start;
@@ -323,7 +373,7 @@ a:hover {
     background-color: white;
     width: 19.8vw;
     margin: 0px;
-    padding: 2.5vh 1.25vw 0px 1.25vw;
+    padding: 1.25vw 1.25vw 0px 1.25vw;
     box-sizing: border-box;
 
     -webkit-box-shadow: 18px 12px 2px 0px rgba(0,0,0,0.2);
@@ -335,9 +385,9 @@ a:hover {
 .why figure .textbox {
   @include for-desktop-extra-small {
     width: 100%;
-    height: 28.3vh;
-    padding: 0.9vh 0.8vw;
-    font-size: 2.1vh;
+    height: 14.2vw;
+    padding: 0.4vw 0.8vw;
+    font-size: 1.1vw;
     line-height: 1.6;
     color: #ffffff;
     background-color: #071d22;
@@ -346,8 +396,8 @@ a:hover {
 
 .why figcaption {
   @include for-desktop-extra-small {
-    padding: 2.6vh 0px;
-    font-size: 4.1vh;
+    padding: 1.3vw 0px;
+    font-size: 2.1vw;
   }
 }
 
@@ -426,7 +476,24 @@ a:hover {
   // }
   @include for-desktop-extra-small {
     grid-column: 12;
+    grid-row: 46;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+  @include for-desktop-small {
+    grid-column: 12;
+    grid-row: 51;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
+  }
+  @include for-desktop-medium {
+    grid-column: 12;
     grid-row: 56;
+    align-self: start;
+    justify-self: start;
+    z-index: 1;
   }
 }
 
