@@ -10,7 +10,7 @@ class About extends React.Component {
       <div className="container">
         <Logo/>
         <div className="topbar">
-          lies
+          l i e s
         </div>
         <div className="who">
           <figure>

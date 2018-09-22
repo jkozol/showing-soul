@@ -8,7 +8,7 @@ class Projects extends React.Component {
       <div className="container">
         <Logo />
         <div className="topbar">
-          soul
+          s o u l
         </div>
       </div>
     );
