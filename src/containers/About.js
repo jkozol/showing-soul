@@ -7,7 +7,7 @@ import lilly from '../../images/lillyPolaroid.png';
 class About extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="about">
         <Logo/>
         <div className="topbar">
           l i e s

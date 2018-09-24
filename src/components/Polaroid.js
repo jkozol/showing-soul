@@ -1,12 +1,13 @@
 import React from 'react';
 
-class Polaroid extends React.Component {
-
-  render() {
-    return (
-      <div></div>
-    );
-  }
-}
+const Polaroid = ({ height }) => (
+  <div className='item'>
+    {title}
+    <span
+      className='deleteItem'
+      onClick={remove(id)}
+    > x </span>
+  </div>
+);
 
 export default Polaroid;

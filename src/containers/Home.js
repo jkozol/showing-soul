@@ -13,7 +13,7 @@ class Home extends React.Component {
 
     return (
       <Link to={'/about'}>
-        <div className="container">
+        <div className="home">
           <div className="topbar">
           hi
           </div>
