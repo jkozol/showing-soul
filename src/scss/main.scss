@@ -596,14 +596,18 @@ a:hover {
   display: flex;
   width: 75vw;
   height: 80vh;
-  justify-content: space-between;
-  border: 1px solid #777;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .stack {
   flex: 0 0 25%;
   height: 17vw;
+  transition: all 1s
+}
+
+.stack:hover {
+  transform: scale(1.1)
 }
 
 .stack figure {
@@ -625,6 +629,7 @@ a:hover {
 .stack figure img {
   width: 100%;
 }
+
 .stack figure figcaption {
   @include for-desktop-extra-small {
     padding: 0.8vw 0px;

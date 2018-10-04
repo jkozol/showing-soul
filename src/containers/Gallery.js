@@ -2,11 +2,28 @@ import React from 'react';
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo';
 import Stack from '../components/Stack';
+
 import flowers from '../../images/flowers.png';
 
 
 class Gallery extends React.Component {
   render() {
+    const Images = [
+      {
+        last: flowers,
+        image: flowers,
+        next: flowers,
+      }, {
+        last: flowers,
+        image: flowers,
+        next: flowers,
+      }, {
+        last: flowers,
+        image: flowers,
+        next: flowers,
+      }
+    ]
+
     return (
       <div className="gallery">
         <Logo />
@@ -14,17 +31,9 @@ class Gallery extends React.Component {
           a e s t h e t i c
         </div>
         <div className="box">
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
-          <Stack image={flowers} />
+          {Images.map(image => {
+            return <Stack image={image} />
+          })}
         </div>
       </div>
     );
