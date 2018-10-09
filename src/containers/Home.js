@@ -6,9 +6,9 @@ import logo from '../../images/mePolaroid.png'
 class Home extends React.Component {
   render() {
     const links = [
-      {to: '/gallery', name: 'Gallery'},
+      {to: '/works', name: 'Works'},
       {to: '/about', name: 'About'},
-      {to: '/projects', name: 'Projects'}
+      {to: '/resume', name: 'Resume'},      
     ];
 
     return (

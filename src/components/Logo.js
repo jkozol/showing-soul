@@ -4,9 +4,9 @@ import logo from '../../images/mePolaroid.png'
 import { Link } from 'react-router-dom'
 
 const links = [
-  {to: '/gallery', name: 'Gallery'},
+  {to: '/works', name: 'Works'},
   {to: '/about', name: 'About'},
-  {to: '/projects', name: 'Projects'}
+  {to: '/resume', name: 'Resume'},
 ];
 
 const Logo = () => (

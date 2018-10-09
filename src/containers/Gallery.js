@@ -1,9 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar'
-import Logo from '../components/Logo';
-import Stack from '../components/Stack';
-
-import flowers from '../../images/flowers.png';
+import Logo from '../components/Logo'
 
 
 class Gallery extends React.Component {

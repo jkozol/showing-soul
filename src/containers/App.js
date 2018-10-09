@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './Home';
-import Gallery from './Gallery';
-import Projects from './Projects';
+import Works from './Works';
 import About from './About';
+import Resume from './Resume';
 import { BrowserRouter, Route, Link, Switch, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
@@ -11,9 +11,9 @@ class App extends React.Component {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/gallery' component={Gallery}/>
           <Route path='/about' component={About}/>
-          <Route path='/projects' component={Projects}/>
+          <Route path='/works' component={Works}/>
+          <Route path='/resume' component={Resume}/>
         </Switch>
       </BrowserRouter>
     );
