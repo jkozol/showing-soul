@@ -858,32 +858,42 @@ a:hover {
   height: 100%;
 }
 
+// .workbox .projects .colorbox {
+//   background: #355c7d; /* fallback for old browsers */
+//   @include gradient-animation(135deg, #EAA4AB, #F2D8AA, 1s);
+// }
+
+// .workbox .projects .colorbox {
+//   background: #355c7d; /* fallback for old browsers */
+//   @include gradient-animation(135deg, #EAA4AB, #C6F4C4, 1s);
+// }
 .workbox .projects .colorbox {
   background: #355c7d; /* fallback for old browsers */
-  @include gradient-animation(135deg, #355c7d, #c06c84, 1s);
+  @include gradient-animation(135deg, #EAA4AB, #C6F4C4, 1s);
 }
+
 
 .workbox .photos .colorbox {
   background: #ba5370; /* fallback for old browsers */
-  @include gradient-animation(180deg, #ba5370, #f4e2d8, 1s);
+  @include gradient-animation(180deg, #EAA4AB, #C6F4C4, 1s);
 }
 
 .workbox .writings .colorbox {
   background: #d9a7c7;  /* fallback for old browsers */
-  @include gradient-animation(-135deg, #d9a7c7, #fffcdc, 1s);
+  @include gradient-animation(-135deg, #EAA4AB, #C6F4C4, 1s);
 }
 
 .workbox .inspo .colorbox {
   background: #ADA996;  /* fallback for old browsers */
-  @include gradient-animation(45deg, #ADA996, #EAEAEA, 1s);
+  @include gradient-animation(45deg, #EAA4AB, #C6F4C4, 1s);
 }
 
 .workbox .temp .colorbox {
   background: #d9a7c7;  /* fallback for old browsers */
-  @include gradient-animation(0deg, #d9a7c7, #fffcdc, 1s);
+  @include gradient-animation(0deg, #EAA4AB, #C6F4C4, 1s);
 }
 
 .workbox .temp2 .colorbox {
   background: #d9a7c7;  /* fallback for old browsers */
-  @include gradient-animation(-45deg, #d9a7c7, #fffcdc, 1s);
+  @include gradient-animation(-45deg, #EAA4AB, #C6F4C4, 1s);
 }
