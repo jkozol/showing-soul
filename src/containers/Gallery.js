@@ -1,25 +1,18 @@
 import React from 'react';
 import Logo from '../components/Logo'
+import links from '../../images/links.json';
+import flowers from '../../images/flowers.png';
+// import * from '../../images/gallery'
+import Polaroid from '../components/Polaroid';
 
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('../../images/gallery', false, /\.(png|jpe?g|svg)$/));
 
 class Gallery extends React.Component {
   render() {
-    const Images = [
-      {
-        last: flowers,
-        image: flowers,
-        next: flowers,
-      }, {
-        last: flowers,
-        image: flowers,
-        next: flowers,
-      }, {
-        last: flowers,
-        image: flowers,
-        next: flowers,
-      }
-    ]
-
     return (
       <div className="gallery">
         <Logo />
@@ -27,8 +20,8 @@ class Gallery extends React.Component {
           a e s t h e t i c
         </div>
         <div className="box">
-          {Images.map(image => {
-            return <Stack image={image} />
+          {images.map(image => {
+            return <Polaroid image={image} />
           })}
         </div>
       </div>

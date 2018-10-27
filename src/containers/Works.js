@@ -2,8 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo';
 import Stack from '../components/Stack';
-
-import flowers from '../../images/flowers.png';
+import { Link } from 'react-router-dom';
 
 
 class Works extends React.Component {
@@ -16,22 +15,34 @@ class Works extends React.Component {
         </div>
         <div className="workbox">
           <div className="projects">
-            <Stack name='projects'/>
+            <Link to={'/about'}>
+              <Stack name='projects'/>
+            </Link>
           </div>
           <div className="photos">
-            <Stack name='photos'/>
+            <Link to={'/gallery'}>
+              <Stack name='photos'/>
+            </Link>
           </div>
           <div className="writings">
-            <Stack name='writings'/>
+            <Link to={'/about'}>
+              <Stack name='writings'/>
+            </Link>
           </div>
           <div className="inspo">
-            <Stack name='inspo'/>
+            <Link to={'/about'}>
+              <Stack name='inspo'/>
+            </Link>
           </div>
           <div className="temp">
-            <Stack name='temp'/>
+            <Link to={'/about'}>
+              <Stack name='temp'/>
+            </Link>
           </div>
           <div className="temp2">
-            <Stack name='temp2'/>
+            <Link to={'/about'}>
+              <Stack name='temp2'/>
+            </Link>
           </div>
         </div>
       </div>

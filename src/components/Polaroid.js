@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Polaroid = ({ height }) => (
-  <div className='item'>
-    {title}
-    <span
-      className='deleteItem'
-      onClick={remove(id)}
-    > x </span>
+const Polaroid = props => (
+  <div className="polaroid">
+    <figure>
+      <div className="imagebox">
+        <img src={props.image} />
+      </div>
+      <figcaption>
+      </figcaption>
+    </figure>
   </div>
 );
 

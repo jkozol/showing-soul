@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import logo from '../../images/mePolaroid.png'
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import logo from '../../images/mePolaroid.png';
 
 class Home extends React.Component {
   render() {
     const links = [
       {to: '/works', name: 'Works'},
       {to: '/about', name: 'About'},
-      {to: '/resume', name: 'Resume'},      
+      {to: '/resume', name: 'Resume'},
     ];
 
     return (
